@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">R</span>
+                  <span className="text-white font-bold text-lg">🦷</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Rasi Dental Clinic</h3>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone size={16} className="text-blue-400" />
-                  <span className="text-gray-300">+91 97893 82834</span>
+                  <span className="text-gray-300">+91 9789382834</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail size={16} className="text-blue-400" />
