@@ -69,12 +69,21 @@ const BlogPost = () => {
               <span>Back to Home</span>
             </button>
 
+            {/* Hero Image */}
+            <div className="h-64 md:h-80 rounded-2xl overflow-hidden mb-8">
+              <img 
+                src="/lovable-uploads/5badb23f-5035-400c-b1f8-3aaffcd605b4.png" 
+                alt="5 Essential Tips for Maintaining Healthy Teeth"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             {/* Article Header */}
             <header className="mb-12">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
                   <Calendar size={16} />
-                  <span>March 15, 2024</span>
+                  <span>March 15, 2025</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Tag size={16} className="text-blue-600 dark:text-blue-400" />

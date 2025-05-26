@@ -52,12 +52,21 @@ const DentalCheckupsPost = () => {
               <span>Back to Home</span>
             </button>
 
+            {/* Hero Image */}
+            <div className="h-64 md:h-80 rounded-2xl overflow-hidden mb-8">
+              <img 
+                src="/lovable-uploads/62e85c5b-b4a1-4801-afc2-ffb8310b30dc.png" 
+                alt="The Importance of Regular Dental Checkups"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             {/* Article Header */}
             <header className="mb-12">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
                   <Calendar size={16} />
-                  <span>March 5, 2024</span>
+                  <span>March 22, 2025</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Tag size={16} className="text-blue-600 dark:text-blue-400" />

@@ -51,12 +51,21 @@ const DentalMythsPost = () => {
               <span>Back to Home</span>
             </button>
 
+            {/* Hero Image */}
+            <div className="h-64 md:h-80 rounded-2xl overflow-hidden mb-8">
+              <img 
+                src="/lovable-uploads/b60f1856-1a5b-441c-9317-cc3ec6690378.png" 
+                alt="Debunking Common Dental Myths"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             {/* Article Header */}
             <header className="mb-12">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
                   <Calendar size={16} />
-                  <span>March 10, 2024</span>
+                  <span>April 10, 2025</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Tag size={16} className="text-blue-600 dark:text-blue-400" />

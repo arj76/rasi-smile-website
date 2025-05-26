@@ -8,30 +8,34 @@ const Blog = () => {
     {
       title: "5 Essential Tips for Maintaining Healthy Teeth",
       excerpt: "Discover simple daily habits that can keep your teeth and gums healthy for life. From proper brushing techniques to dietary choices.",
-      date: "March 15, 2024",
+      date: "March 15, 2025",
       category: "Oral Care Tips",
-      slug: "5-essential-tips-for-maintaining-healthy-teeth"
+      slug: "5-essential-tips-for-maintaining-healthy-teeth",
+      image: "/lovable-uploads/5badb23f-5035-400c-b1f8-3aaffcd605b4.png"
     },
     {
       title: "Debunking Common Dental Myths",
       excerpt: "Separate fact from fiction as we address the most common misconceptions about dental health and treatments.",
-      date: "March 10, 2024",
+      date: "April 10, 2025",
       category: "Dental Myths",
-      slug: "debunking-common-dental-myths"
+      slug: "debunking-common-dental-myths",
+      image: "/lovable-uploads/b60f1856-1a5b-441c-9317-cc3ec6690378.png"
     },
     {
       title: "The Importance of Regular Dental Checkups",
       excerpt: "Learn why routine dental visits are crucial for preventing serious oral health issues and maintaining your overall health.",
-      date: "March 5, 2024",
+      date: "March 22, 2025",
       category: "Preventive Care",
-      slug: "importance-of-regular-dental-checkups"
+      slug: "importance-of-regular-dental-checkups",
+      image: "/lovable-uploads/62e85c5b-b4a1-4801-afc2-ffb8310b30dc.png"
     },
     {
       title: "Modern Dental Technology: What's New?",
       excerpt: "Explore the latest advancements in dental technology and how they're making treatments more comfortable and effective.",
-      date: "February 28, 2024",
+      date: "May 6, 2025",
       category: "Technology",
-      slug: "modern-dental-technology-whats-new"
+      slug: "modern-dental-technology-whats-new",
+      image: "/lovable-uploads/dceedb36-277f-4319-ba96-4288fbbf07eb.png"
     }
   ];
 
@@ -63,7 +67,13 @@ const Blog = () => {
                 key={index}
                 className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800"></div>
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
