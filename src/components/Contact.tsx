@@ -58,7 +58,7 @@ const Contact = () => {
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300">
                         Rasi Dental Clinic<br />
-                        Tiruchy, Tamil Nadu
+                        Karur, Tamil Nadu
                       </p>
                     </div>
                   </div>

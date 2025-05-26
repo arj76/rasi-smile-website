@@ -16,19 +16,22 @@ const Blog = () => {
       title: "Debunking Common Dental Myths",
       excerpt: "Separate fact from fiction as we address the most common misconceptions about dental health and treatments.",
       date: "March 10, 2024",
-      category: "Dental Myths"
+      category: "Dental Myths",
+      slug: "debunking-common-dental-myths"
     },
     {
       title: "The Importance of Regular Dental Checkups",
       excerpt: "Learn why routine dental visits are crucial for preventing serious oral health issues and maintaining your overall health.",
       date: "March 5, 2024",
-      category: "Preventive Care"
+      category: "Preventive Care",
+      slug: "importance-of-regular-dental-checkups"
     },
     {
       title: "Modern Dental Technology: What's New?",
       excerpt: "Explore the latest advancements in dental technology and how they're making treatments more comfortable and effective.",
       date: "February 28, 2024",
-      category: "Technology"
+      category: "Technology",
+      slug: "modern-dental-technology-whats-new"
     }
   ];
 
@@ -89,28 +92,6 @@ const Blog = () => {
                 </div>
               </article>
             ))}
-          </div>
-
-          {/* Newsletter Signup */}
-          <div className="mt-16">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-12 text-white text-center">
-              <h3 className="text-3xl font-bold mb-4">
-                Stay Updated with Dental Health Tips
-              </h3>
-              <p className="text-xl mb-8 opacity-90">
-                Subscribe to our newsletter for the latest dental health advice and clinic updates.
-              </p>
-              <div className="max-w-md mx-auto flex gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
-                />
-                <button className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-full font-semibold transition-colors duration-300">
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin size={16} className="text-blue-400" />
-                  <span className="text-gray-300">Rasi Dental Clinic, Tiruchy, Tamil Nadu</span>
+                  <span className="text-gray-300">Rasi Dental Clinic, Karur, Tamil Nadu</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone size={16} className="text-blue-400" />
