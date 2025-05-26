@@ -3,31 +3,25 @@ const Services = () => {
   const services = [
     {
       title: "General Dentistry",
+      icon: "🦷",
       description: "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
       features: ["Regular Cleanings", "Cavity Fillings", "Root Canal Treatment", "Tooth Extractions"]
     },
     {
-      title: "Cosmetic Dentistry",
-      description: "Transform your smile with our advanced cosmetic dental procedures.",
-      features: ["Teeth Whitening", "Veneers", "Dental Bonding", "Smile Makeovers"]
-    },
-    {
-      title: "Pediatric Dentistry",
-      description: "Gentle, specialized care for children to ensure healthy dental development.",
-      features: ["Child-Friendly Environment", "Preventive Care", "Fluoride Treatments", "Dental Education"]
-    },
-    {
       title: "Orthodontics",
+      icon: "📐",
       description: "Straighten your teeth with modern orthodontic solutions.",
       features: ["Traditional Braces", "Clear Aligners", "Retainers", "Bite Correction"]
     },
     {
       title: "Dental Implants",
+      icon: "🔧",
       description: "Permanent tooth replacement solutions that look and feel natural.",
       features: ["Single Implants", "Multiple Implants", "Implant-Supported Dentures", "Bone Grafting"]
     },
     {
       title: "Emergency Care",
+      icon: "🚨",
       description: "Immediate dental care when you need it most.",
       features: ["24/7 Emergency Line", "Same-Day Appointments", "Pain Relief", "Urgent Treatments"]
     }
@@ -49,7 +43,7 @@ const Services = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -57,8 +51,8 @@ const Services = () => {
               >
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4">
-                    <span className="text-white font-bold text-xl">
-                      {service.title.charAt(0)}
+                    <span className="text-2xl">
+                      {service.icon}
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">

@@ -35,15 +35,15 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin size={16} className="text-blue-400" />
-                  <span className="text-gray-300">123 Main Street, Medical District, City</span>
+                  <span className="text-gray-300">Rasi Dental Clinic, Tiruchy, Tamil Nadu</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone size={16} className="text-blue-400" />
-                  <span className="text-gray-300">+91 98765 43210</span>
+                  <span className="text-gray-300">+91 97893 82834</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail size={16} className="text-blue-400" />
-                  <span className="text-gray-300">info@rasidentalclinic.com</span>
+                  <span className="text-gray-300">arjagadeeshwaran@gmail.com</span>
                 </div>
               </div>
             </div>
@@ -104,9 +104,7 @@ const Footer = () => {
                   <span className="text-gray-300">Schedule</span>
                 </div>
                 <div className="text-gray-300 space-y-2">
-                  <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
-                  <p>Saturday: 9:00 AM - 6:00 PM</p>
-                  <p>Sunday: 10:00 AM - 4:00 PM</p>
+                  <p>Monday - Sunday: 10:00 AM - 8:00 PM</p>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-700">
                   <p className="text-blue-400 font-semibold">Emergency Care Available</p>

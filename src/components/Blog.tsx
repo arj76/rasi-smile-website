@@ -1,11 +1,16 @@
 
+import { useNavigate } from "react-router-dom";
+
 const Blog = () => {
+  const navigate = useNavigate();
+
   const blogPosts = [
     {
       title: "5 Essential Tips for Maintaining Healthy Teeth",
       excerpt: "Discover simple daily habits that can keep your teeth and gums healthy for life. From proper brushing techniques to dietary choices.",
       date: "March 15, 2024",
-      category: "Oral Care Tips"
+      category: "Oral Care Tips",
+      slug: "5-essential-tips-for-maintaining-healthy-teeth"
     },
     {
       title: "Debunking Common Dental Myths",
@@ -26,6 +31,12 @@ const Blog = () => {
       category: "Technology"
     }
   ];
+
+  const handleReadMore = (slug?: string) => {
+    if (slug) {
+      navigate(`/blog/${slug}`);
+    }
+  };
 
   return (
     <section id="blog" className="py-20 bg-gray-50 dark:bg-gray-800">
@@ -69,7 +80,10 @@ const Blog = () => {
                     {post.excerpt}
                   </p>
 
-                  <button className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-300">
+                  <button 
+                    onClick={() => handleReadMore(post.slug)}
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-300"
+                  >
                     Read More →
                   </button>
                 </div>

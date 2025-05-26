@@ -57,8 +57,8 @@ const Contact = () => {
                         Visit Our Clinic
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300">
-                        123 Main Street, Medical District<br />
-                        City, State 12345
+                        Rasi Dental Clinic<br />
+                        Tiruchy, Tamil Nadu
                       </p>
                     </div>
                   </div>
@@ -72,12 +72,9 @@ const Contact = () => {
                         Call Us
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300">
-                        <a href="tel:+1234567890" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                          +91 98765 43210
+                        <a href="tel:+919789382834" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                          +91 97893 82834
                         </a>
-                      </p>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Emergency: +91 98765 43211
                       </p>
                     </div>
                   </div>
@@ -91,8 +88,8 @@ const Contact = () => {
                         Email Us
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300">
-                        <a href="mailto:info@rasidentalclinic.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                          info@rasidentalclinic.com
+                        <a href="mailto:arjagadeeshwaran@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                          arjagadeeshwaran@gmail.com
                         </a>
                       </p>
                     </div>
@@ -107,9 +104,7 @@ const Contact = () => {
                         Operating Hours
                       </h4>
                       <div className="text-gray-600 dark:text-gray-300 space-y-1">
-                        <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-                        <p>Saturday: 9:00 AM - 6:00 PM</p>
-                        <p>Sunday: 10:00 AM - 4:00 PM</p>
+                        <p>Monday - Sunday: 10:00 AM - 8:00 PM</p>
                       </div>
                     </div>
                   </div>
@@ -201,10 +196,17 @@ const Contact = () => {
 
           {/* Map Section */}
           <div className="mt-16">
-            <div className="bg-gray-200 dark:bg-gray-700 rounded-3xl h-64 md:h-96 flex items-center justify-center">
-              <p className="text-gray-600 dark:text-gray-300 text-lg">
-                Interactive Map Integration
-              </p>
+            <div className="rounded-3xl overflow-hidden shadow-lg">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.006077441837!2d78.0764973!3d10.962913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2fafd500c6f1%3A0xa1813e02c86df9a0!2sRASI%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1748236306681!5m2!1sen!2sin" 
+                width="100%" 
+                height="400" 
+                style={{border:0}} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-64 md:h-96"
+              ></iframe>
             </div>
           </div>
         </div>
