@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Email, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,7 +42,7 @@ const Footer = () => {
                   <span className="text-gray-300">+91 98765 43210</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Email size={16} className="text-blue-400" />
+                  <Mail size={16} className="text-blue-400" />
                   <span className="text-gray-300">info@rasidentalclinic.com</span>
                 </div>
               </div>
