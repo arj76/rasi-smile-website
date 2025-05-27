@@ -20,13 +20,13 @@ export const blogPostsData: Record<string, BlogPost> = {
             1. Brush Twice Daily and Brush Properly
           </h2>
           <p className="mb-4">
-            Brushing your teeth at least twice a day is fundamental. But it's not just about frequency—it's about technique too.
+            Brushing your teeth at least twice a day is fundamental. But it&apos;s not just about frequency—it&apos;s about technique too.
           </p>
           <ul className="list-disc pl-6 space-y-2 mb-6">
             <li>Use a soft-bristled toothbrush and fluoride toothpaste.</li>
             <li>Hold the brush at a 45-degree angle to your gums.</li>
             <li>Use short, gentle strokes to clean all surfaces of your teeth.</li>
-            <li>Don't forget to brush your tongue to remove bacteria and freshen breath.</li>
+            <li>Don&apos;t forget to brush your tongue to remove bacteria and freshen breath.</li>
           </ul>
         </section>
 
@@ -35,12 +35,12 @@ export const blogPostsData: Record<string, BlogPost> = {
             2. Floss Daily to Remove Hidden Plaque
           </h2>
           <p className="mb-4">
-            Flossing is essential for removing food particles and plaque from areas your toothbrush can't reach.
+            Flossing is essential for removing food particles and plaque from areas your toothbrush can&apos;t reach.
           </p>
           <ul className="list-disc pl-6 space-y-2 mb-6">
             <li>Use about 18 inches of floss and wind most of it around your middle fingers.</li>
             <li>Gently slide the floss between teeth and curve it into a C-shape.</li>
-            <li>Don't forget the back of your last teeth.</li>
+            <li>Don&apos;t forget the back of your last teeth.</li>
           </ul>
         </section>
 
@@ -49,7 +49,7 @@ export const blogPostsData: Record<string, BlogPost> = {
             3. Limit Sugary and Acidic Foods
           </h2>
           <p className="mb-4">
-            Sugars and acids are your teeth's worst enemies. They feed harmful bacteria and erode enamel.
+            Sugars and acids are your teeth&apos;s worst enemies. They feed harmful bacteria and erode enamel.
           </p>
           <ul className="list-disc pl-6 space-y-2 mb-6">
             <li>Cut down on candies, soda, fruit juices, and processed snacks.</li>
@@ -74,7 +74,7 @@ export const blogPostsData: Record<string, BlogPost> = {
 
         <section>
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
-            5. Don't Ignore Your Gums
+            5. Don&apos;t Ignore Your Gums
           </h2>
           <p className="mb-4">
             Healthy gums are just as important as healthy teeth.
@@ -109,7 +109,7 @@ export const blogPostsData: Record<string, BlogPost> = {
             Common Dental Myths Exposed
           </h2>
           <p className="mb-4">
-            There are many misconceptions about dental health that can actually harm your oral care routine. Let's separate fact from fiction.
+            There are many misconceptions about dental health that can actually harm your oral care routine. Let&apos;s separate fact from fiction.
           </p>
         </section>
         <section className="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-2xl">
@@ -151,7 +151,7 @@ export const blogPostsData: Record<string, BlogPost> = {
             Latest Dental Technology
           </h2>
           <p className="mb-4">
-            Discover the cutting-edge technology that's revolutionizing dental care and making treatments more comfortable than ever.
+            Discover the cutting-edge technology that&apos;s revolutionizing dental care and making treatments more comfortable than ever.
           </p>
         </section>
         <section className="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-2xl">
