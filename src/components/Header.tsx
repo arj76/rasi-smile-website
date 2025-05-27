@@ -9,6 +9,7 @@ const Header = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
+    { name: "Tooth Tales", href: "#tooth-tales" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
@@ -50,10 +51,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* CTA Button - adjusted positioning */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors duration-300 font-medium"
+            className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors duration-300 font-medium mr-16"
           >
             Book Appointment
           </button>

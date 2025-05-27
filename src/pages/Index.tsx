@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import ToothTales from "@/components/ToothTales";
 import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
@@ -27,10 +28,10 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark' : ''}`}>
-      {/* Dark/Light Mode Toggle */}
+      {/* Dark/Light Mode Toggle - adjusted position */}
       <button
         onClick={toggleDarkMode}
-        className="fixed top-4 right-4 z-50 p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
+        className="fixed top-4 right-20 z-50 p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
         aria-label="Toggle dark mode"
       >
         {isDarkMode ? (
@@ -45,6 +46,7 @@ const Index = () => {
         <Hero />
         <About />
         <Services />
+        <ToothTales />
         <Testimonials />
         <Blog />
         <Contact />

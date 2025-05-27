@@ -20,10 +20,10 @@ const Services = () => {
       features: ["Single Implants", "Multiple Implants", "Implant-Supported Dentures", "Bone Grafting"]
     },
     {
-      title: "Emergency Care",
-      icon: "🚨",
-      description: "Immediate dental care when you need it most.",
-      features: ["24/7 Emergency Line", "Same-Day Appointments", "Pain Relief", "Urgent Treatments"]
+      title: "Prosthodontics",
+      icon: "👑",
+      description: "Specialized care for replacing and restoring teeth with crowns, bridges, and dentures.",
+      features: ["Dental Crowns", "Bridges", "Complete Dentures", "Partial Dentures"]
     }
   ];
 

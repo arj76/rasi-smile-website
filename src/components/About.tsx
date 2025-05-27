@@ -96,20 +96,23 @@ const About = () => {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Doctor's Photo */}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-3xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <span className="text-6xl">🦷</span>
-                  </div>
-                  <h4 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-                    Dr. A. R. Jagadeeshwaran
-                  </h4>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium">
-                    General and Prosthodontics
-                  </p>
-                </div>
+              <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-3xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/da04c1ff-094e-4633-b3b6-870328c937f4.png" 
+                  alt="Dr. A. R. Jagadeeshwaran"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+                <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-1">
+                  Dr. A. R. Jagadeeshwaran
+                </h4>
+                <p className="text-blue-600 dark:text-blue-400 font-medium">
+                  General and Prosthodontics
+                </p>
               </div>
               
               {/* Decorative elements */}
