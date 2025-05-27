@@ -1,7 +1,9 @@
-
 import { BookOpen, Users, Heart, Lightbulb, Baby, GraduationCap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ToothTales = () => {
+  const navigate = useNavigate();
+
   const categories = [
     {
       title: "Little Smiles",
@@ -52,7 +54,8 @@ const ToothTales = () => {
       title: "What Causes Cavities?",
       summary: "Learn about the science behind tooth decay and how to prevent it.",
       image: "🦠",
-      readTime: "3 min read"
+      readTime: "3 min read",
+      link: "/blog/what-causes-cavities"
     },
     {
       title: "Foods That Love Your Teeth",
@@ -67,6 +70,12 @@ const ToothTales = () => {
       readTime: "2 min read"
     }
   ];
+
+  const handleArticleClick = (article: any) => {
+    if (article.link) {
+      navigate(article.link);
+    }
+  };
 
   return (
     <section id="tooth-tales" className="py-20 bg-gradient-to-br from-blue-50 to-mint-50 dark:from-gray-900 dark:to-gray-800">
@@ -120,7 +129,10 @@ const ToothTales = () => {
               {featuredArticles.map((article, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                  className={`bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${
+                    article.link ? 'cursor-pointer' : ''
+                  }`}
+                  onClick={() => handleArticleClick(article)}
                 >
                   <div className="text-4xl mb-4 text-center">{article.image}</div>
                   <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
@@ -133,7 +145,13 @@ const ToothTales = () => {
                     <span className="text-sm text-blue-600 dark:text-blue-400 font-medium">
                       {article.readTime}
                     </span>
-                    <button className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold">
+                    <button 
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleArticleClick(article);
+                      }}
+                    >
                       Read More →
                     </button>
                   </div>

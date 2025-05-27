@@ -10,6 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import DentalMythsPost from "./pages/DentalMythsPost";
 import DentalCheckupsPost from "./pages/DentalCheckupsPost";
 import ModernTechPost from "./pages/ModernTechPost";
+import WhatCausesCavitiesPost from "./pages/WhatCausesCavitiesPost";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/blog/debunking-common-dental-myths" element={<DentalMythsPost />} />
           <Route path="/blog/importance-of-regular-dental-checkups" element={<DentalCheckupsPost />} />
           <Route path="/blog/modern-dental-technology-whats-new" element={<ModernTechPost />} />
+          <Route path="/blog/what-causes-cavities" element={<WhatCausesCavitiesPost />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
