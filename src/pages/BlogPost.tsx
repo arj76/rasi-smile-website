@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -23,7 +22,7 @@ const BlogPost = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Blog post data
+  // Blog post data - now includes all four posts
   const blogPosts = {
     "5-essential-tips-for-maintaining-healthy-teeth": {
       title: "5 Essential Tips for Maintaining Healthy Teeth",
@@ -118,6 +117,69 @@ const BlogPost = () => {
                 Schedule Your Checkup
               </button>
             </div>
+          </section>
+        </div>
+      )
+    },
+    "debunking-common-dental-myths": {
+      title: "Debunking Common Dental Myths",
+      date: "April 10, 2025",
+      category: "Dental Myths",
+      image: "/lovable-uploads/b60f1856-1a5b-441c-9317-cc3ec6690378.png",
+      content: (
+        <div className="space-y-8 text-gray-700 dark:text-gray-300">
+          <section>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Common Dental Myths Exposed
+            </h2>
+            <p className="mb-4">
+              There are many misconceptions about dental health that can actually harm your oral care routine. Let's separate fact from fiction.
+            </p>
+          </section>
+          <section className="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-2xl">
+            <p>This content is managed by a dedicated blog post component. Visit our dental myths article for the complete content.</p>
+          </section>
+        </div>
+      )
+    },
+    "importance-of-regular-dental-checkups": {
+      title: "The Importance of Regular Dental Checkups",
+      date: "March 22, 2025",
+      category: "Preventive Care",
+      image: "/lovable-uploads/62e85c5b-b4a1-4801-afc2-ffb8310b30dc.png",
+      content: (
+        <div className="space-y-8 text-gray-700 dark:text-gray-300">
+          <section>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Why Regular Checkups Matter
+            </h2>
+            <p className="mb-4">
+              Regular dental checkups are essential for maintaining optimal oral health and preventing serious dental issues.
+            </p>
+          </section>
+          <section className="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-2xl">
+            <p>This content is managed by a dedicated blog post component. Visit our dental checkups article for the complete content.</p>
+          </section>
+        </div>
+      )
+    },
+    "modern-dental-technology-whats-new": {
+      title: "Modern Dental Technology: What's New?",
+      date: "May 6, 2025",
+      category: "Technology",
+      image: "/lovable-uploads/dceedb36-277f-4319-ba96-4288fbbf07eb.png",
+      content: (
+        <div className="space-y-8 text-gray-700 dark:text-gray-300">
+          <section>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Latest Dental Technology
+            </h2>
+            <p className="mb-4">
+              Discover the cutting-edge technology that's revolutionizing dental care and making treatments more comfortable than ever.
+            </p>
+          </section>
+          <section className="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-2xl">
+            <p>This content is managed by a dedicated blog post component. Visit our modern technology article for the complete content.</p>
           </section>
         </div>
       )
