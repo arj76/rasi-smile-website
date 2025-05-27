@@ -1,4 +1,6 @@
 
+import React from "react";
+
 export interface BlogPost {
   title: string;
   date: string;
