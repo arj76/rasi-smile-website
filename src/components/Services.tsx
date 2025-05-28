@@ -1,31 +1,50 @@
 
+import { useNavigate } from "react-router-dom";
+
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       title: "General Dentistry",
       icon: "🦷",
       description: "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
-      features: ["Regular Cleanings", "Cavity Fillings", "Root Canal Treatment", "Tooth Extractions"]
+      features: ["Regular Cleanings", "Cavity Fillings", "Root Canal Treatment", "Tooth Extractions"],
+      slug: "general-dentistry"
     },
     {
       title: "Orthodontics",
       icon: "📐",
       description: "Straighten your teeth with modern orthodontic solutions.",
-      features: ["Traditional Braces", "Clear Aligners", "Retainers", "Bite Correction"]
+      features: ["Traditional Braces", "Clear Aligners", "Retainers", "Bite Correction"],
+      slug: "orthodontics"
     },
     {
       title: "Dental Implants",
       icon: "🔧",
       description: "Permanent tooth replacement solutions that look and feel natural.",
-      features: ["Single Implants", "Multiple Implants", "Implant-Supported Dentures", "Bone Grafting"]
+      features: ["Single Implants", "Multiple Implants", "Implant-Supported Dentures", "Bone Grafting"],
+      slug: "dental-implants"
     },
     {
       title: "Prosthodontics",
       icon: "👑",
       description: "Specialized care for replacing and restoring teeth with crowns, bridges, and dentures.",
-      features: ["Dental Crowns", "Bridges", "Complete Dentures", "Partial Dentures"]
+      features: ["Dental Crowns", "Bridges", "Complete Dentures", "Partial Dentures"],
+      slug: "prosthodontics"
     }
   ];
+
+  const handleLearnMore = (slug: string) => {
+    navigate(`/services/${slug}`);
+  };
+
+  const scrollToContact = () => {
+    const element = document.querySelector("#contact");
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="services" className="py-20 bg-gray-50 dark:bg-gray-800">
@@ -72,7 +91,10 @@ const Services = () => {
                   ))}
                 </ul>
 
-                <button className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold transition-colors duration-300">
+                <button 
+                  onClick={() => handleLearnMore(service.slug)}
+                  className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold transition-colors duration-300"
+                >
                   Learn More
                 </button>
               </div>
@@ -88,7 +110,10 @@ const Services = () => {
               <p className="text-xl mb-8 opacity-90">
                 Schedule your consultation today and take the first step towards optimal oral health.
               </p>
-              <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-300">
+              <button 
+                onClick={scrollToContact}
+                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-300"
+              >
                 Book Your Appointment
               </button>
             </div>
