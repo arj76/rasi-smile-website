@@ -1,3 +1,4 @@
+
 import { BookOpen, Users, Heart, Lightbulb, Baby, GraduationCap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -10,42 +11,48 @@ const ToothTales = () => {
       icon: "🧒",
       description: "Fun dental care tips for children and baby teeth milestones.",
       color: "from-pink-500 to-pink-600",
-      articles: ["Baby Teeth Care", "First Dental Visit", "Making Brushing Fun"]
+      articles: ["Baby Teeth Care", "First Dental Visit", "Making Brushing Fun"],
+      link: "/blog/little-smiles"
     },
     {
       title: "Teen Talk",
       icon: "🧑",
       description: "Braces, wisdom teeth, and oral hygiene during puberty.",
       color: "from-purple-500 to-purple-600",
-      articles: ["Braces 101", "Wisdom Teeth Guide", "Teen Oral Care"]
+      articles: ["Braces 101", "Wisdom Teeth Guide", "Teen Oral Care"],
+      link: "/blog/teen-talk"
     },
     {
       title: "Family Tips",
       icon: "👨‍👩‍👧",
       description: "Preventive care tips for the whole family.",
       color: "from-green-500 to-green-600",
-      articles: ["Family Dental Routine", "Healthy Snacks", "Prevention Tips"]
+      articles: ["Family Dental Routine", "Healthy Snacks", "Prevention Tips"],
+      link: "/blog/family-tips"
     },
     {
       title: "Dental Know-How",
       icon: "🦷",
       description: "Understanding cavities, gum health, and dental procedures.",
       color: "from-blue-500 to-blue-600",
-      articles: ["What are Cavities?", "Gum Disease Prevention", "Root Canal Facts"]
+      articles: ["What are Cavities?", "Gum Disease Prevention", "Root Canal Facts"],
+      link: "/blog/dental-know-how"
     },
     {
       title: "Did You Know?",
       icon: "🤔",
       description: "Fun facts and myths vs. facts about oral health.",
       color: "from-yellow-500 to-yellow-600",
-      articles: ["Dental Myths Busted", "Amazing Tooth Facts", "Historical Dentistry"]
+      articles: ["Dental Myths Busted", "Amazing Tooth Facts", "Historical Dentistry"],
+      link: "/blog/did-you-know"
     },
     {
       title: "Treatment Guide",
       icon: "⚕️",
       description: "What to expect from common dental treatments.",
       color: "from-indigo-500 to-indigo-600",
-      articles: ["Filling Process", "Crown Procedure", "Cleaning Benefits"]
+      articles: ["Filling Process", "Crown Procedure", "Cleaning Benefits"],
+      link: "/blog/treatment-guide"
     }
   ];
 
@@ -74,6 +81,12 @@ const ToothTales = () => {
   const handleArticleClick = (article: any) => {
     if (article.link) {
       navigate(article.link);
+    }
+  };
+
+  const handleCategoryClick = (category: any) => {
+    if (category.link) {
+      navigate(category.link);
     }
   };
 
@@ -169,7 +182,8 @@ const ToothTales = () => {
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                  className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                  onClick={() => handleCategoryClick(category)}
                 >
                   <div className={`w-16 h-16 bg-gradient-to-r ${category.color} rounded-2xl flex items-center justify-center mb-4`}>
                     <span className="text-2xl">
@@ -190,7 +204,13 @@ const ToothTales = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 text-gray-800 dark:text-white py-2 rounded-xl font-medium transition-colors duration-300">
+                  <button 
+                    className="w-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 text-gray-800 dark:text-white py-2 rounded-xl font-medium transition-colors duration-300"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleCategoryClick(category);
+                    }}
+                  >
                     Explore Category
                   </button>
                 </div>
