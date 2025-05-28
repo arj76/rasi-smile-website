@@ -6,22 +6,6 @@ const Blog = () => {
 
   const blogPosts = [
     {
-      title: "5 Essential Tips for Maintaining Healthy Teeth",
-      excerpt: "Discover simple daily habits that can keep your teeth and gums healthy for life. From proper brushing techniques to dietary choices.",
-      date: "March 15, 2025",
-      category: "Oral Care Tips",
-      slug: "5-essential-tips-for-maintaining-healthy-teeth",
-      image: "/lovable-uploads/5badb23f-5035-400c-b1f8-3aaffcd605b4.png"
-    },
-    {
-      title: "Debunking Common Dental Myths",
-      excerpt: "Separate fact from fiction as we address the most common misconceptions about dental health and treatments.",
-      date: "April 10, 2025",
-      category: "Dental Myths",
-      slug: "debunking-common-dental-myths",
-      image: "/lovable-uploads/b60f1856-1a5b-441c-9317-cc3ec6690378.png"
-    },
-    {
       title: "The Importance of Regular Dental Checkups",
       excerpt: "Learn why routine dental visits are crucial for preventing serious oral health issues and maintaining your overall health.",
       date: "March 22, 2025",
