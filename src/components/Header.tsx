@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -51,10 +50,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button - adjusted positioning */}
+          {/* CTA Button - keeping original positioning */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors duration-300 font-medium mr-16"
+            className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors duration-300 font-medium"
           >
             Book Appointment
           </button>

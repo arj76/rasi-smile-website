@@ -28,10 +28,10 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark' : ''}`}>
-      {/* Dark/Light Mode Toggle - adjusted position */}
+      {/* Dark/Light Mode Toggle - moved further to the right */}
       <button
         onClick={toggleDarkMode}
-        className="fixed top-4 right-20 z-50 p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
+        className="fixed top-4 right-4 z-50 p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
         aria-label="Toggle dark mode"
       >
         {isDarkMode ? (

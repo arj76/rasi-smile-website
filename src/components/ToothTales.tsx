@@ -68,13 +68,15 @@ const ToothTales = () => {
       title: "Foods That Love Your Teeth",
       summary: "Discover which foods strengthen your teeth and which to avoid.",
       image: "🥕",
-      readTime: "4 min read"
+      readTime: "4 min read",
+      link: "/blog/foods-love-teeth"
     },
     {
       title: "Toothbrush Tips: Manual vs. Electric",
       summary: "Find out which toothbrush is right for you and your family.",
       image: "🪥",
-      readTime: "2 min read"
+      readTime: "2 min read",
+      link: "/blog/toothbrush-tips"
     }
   ];
 
