@@ -1,0 +1,118 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Service Pages -->
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/services/general-dentistry</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/services/orthodontics</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/services/dental-implants</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/services/prosthodontics</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/importance-of-regular-dental-checkups</loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/modern-dental-technology-whats-new</loc>
+    <lastmod>2025-05-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/what-causes-cavities</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/little-smiles</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/teen-talk</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/dental-know-how</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/did-you-know</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/treatment-guide</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/family-tips</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/foods-love-teeth</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasi-dental-clinic.lovable.app/blog/toothbrush-tips</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
