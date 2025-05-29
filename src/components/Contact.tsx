@@ -72,8 +72,8 @@ const Contact = () => {
                         Call Us
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300">
-                        <a href="tel:+919789382834" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                          +91 97893 82834
+                        <a href="tel:+918148444798" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                          +91 81484 44798
                         </a>
                       </p>
                     </div>
