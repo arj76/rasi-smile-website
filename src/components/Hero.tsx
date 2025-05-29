@@ -24,14 +24,14 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white leading-tight">
-                Your Smile,{" "}
+                Best Dentist in{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
-                  Our Priority
+                  Karur
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                Experience exceptional dental care at Rasi Dental Clinic with Dr. A. R. Jagadeeshwaran. 
-                We provide comprehensive dental solutions in a comfortable, modern environment.
+                Experience exceptional dental care at Rasi Dental Clinic in Karur with Dr. A. R. Jagadeeshwaran. 
+                We provide comprehensive dental solutions including general dentistry, prosthodontics, orthodontics, and dental implants in a comfortable, modern environment.
               </p>
             </div>
 
@@ -39,12 +39,14 @@ const Hero = () => {
               <button
                 onClick={scrollToContact}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                aria-label="Book dental appointment in Karur"
               >
                 Book Appointment
               </button>
               <button
                 onClick={scrollToAbout}
                 className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
+                aria-label="Meet Dr. A. R. Jagadeeshwaran - Dentist in Karur"
               >
                 Meet the Doctor
               </button>
@@ -57,7 +59,7 @@ const Hero = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">1000+</div>
-                <div className="text-gray-600 dark:text-gray-300">Happy Patients</div>
+                <div className="text-gray-600 dark:text-gray-300">Happy Patients in Karur</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">95%</div>
@@ -74,11 +76,11 @@ const Hero = () => {
                   <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-4xl font-bold text-white">R</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                  <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
                     Rasi Dental Clinic
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Advanced Dental Care
+                    Advanced Dental Care in Karur
                   </p>
                 </div>
               </div>
@@ -92,6 +94,7 @@ const Hero = () => {
           <button
             onClick={scrollToAbout}
             className="animate-bounce text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-300"
+            aria-label="Scroll to learn more about Rasi Dental Clinic"
           >
             <ArrowDown size={32} />
           </button>

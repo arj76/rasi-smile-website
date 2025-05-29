@@ -6,30 +6,30 @@ const Services = () => {
 
   const services = [
     {
-      title: "General Dentistry",
+      title: "General Dentistry in Karur",
       icon: "🦷",
-      description: "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
-      features: ["Regular Cleanings", "Cavity Fillings", "Root Canal Treatment", "Tooth Extractions"],
+      description: "Comprehensive dental care including cleanings, fillings, and preventive treatments for all ages in Karur.",
+      features: ["Regular Dental Cleanings", "Cavity Fillings", "Root Canal Treatment", "Tooth Extractions"],
       slug: "general-dentistry"
     },
     {
-      title: "Orthodontics",
+      title: "Orthodontics in Karur",
       icon: "📐",
-      description: "Straighten your teeth with modern orthodontic solutions.",
+      description: "Straighten your teeth with modern orthodontic solutions including braces and clear aligners.",
       features: ["Traditional Braces", "Clear Aligners", "Retainers", "Bite Correction"],
       slug: "orthodontics"
     },
     {
-      title: "Dental Implants",
+      title: "Dental Implants in Karur",
       icon: "🔧",
-      description: "Permanent tooth replacement solutions that look and feel natural.",
+      description: "Permanent tooth replacement solutions that look and feel natural, available in Karur.",
       features: ["Single Implants", "Multiple Implants", "Implant-Supported Dentures", "Bone Grafting"],
       slug: "dental-implants"
     },
     {
-      title: "Prosthodontics",
+      title: "Prosthodontics in Karur",
       icon: "👑",
-      description: "Specialized care for replacing and restoring teeth with crowns, bridges, and dentures.",
+      description: "Specialized care for replacing and restoring teeth with crowns, bridges, and dentures in Karur.",
       features: ["Dental Crowns", "Bridges", "Complete Dentures", "Partial Dentures"],
       slug: "prosthodontics"
     }
@@ -53,11 +53,11 @@ const Services = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
-              Our Services
+              Dental Services in Karur
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We offer a comprehensive range of dental services to meet all your oral health needs, 
-              from routine cleanings to advanced treatments.
+              We offer a comprehensive range of dental services in Karur to meet all your oral health needs, 
+              from routine cleanings to advanced treatments including prosthodontics and orthodontics.
             </p>
           </div>
 
@@ -70,7 +70,7 @@ const Services = () => {
               >
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4">
-                    <span className="text-2xl">
+                    <span className="text-2xl" role="img" aria-label={service.title}>
                       {service.icon}
                     </span>
                   </div>
@@ -94,6 +94,7 @@ const Services = () => {
                 <button 
                   onClick={() => handleLearnMore(service.slug)}
                   className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold transition-colors duration-300"
+                  aria-label={`Learn more about ${service.title}`}
                 >
                   Learn More
                 </button>
@@ -105,14 +106,15 @@ const Services = () => {
           <div className="mt-16 text-center">
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-12 text-white">
               <h3 className="text-3xl font-bold mb-4">
-                Ready to Transform Your Smile?
+                Ready to Transform Your Smile in Karur?
               </h3>
               <p className="text-xl mb-8 opacity-90">
-                Schedule your consultation today and take the first step towards optimal oral health.
+                Schedule your consultation today at Rasi Dental Clinic and take the first step towards optimal oral health.
               </p>
               <button 
                 onClick={scrollToContact}
                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-300"
+                aria-label="Book dental appointment in Karur"
               >
                 Book Your Appointment
               </button>

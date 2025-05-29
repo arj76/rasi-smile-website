@@ -9,11 +9,11 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
-              About Dr. A. R. Jagadeeshwaran
+              About Dr. A. R. Jagadeeshwaran - Top Dentist in Karur
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Dedicated to providing exceptional dental care with a personal touch, 
-              combining years of expertise with the latest dental technologies.
+              Dedicated to providing exceptional dental care in Karur with a personal touch, 
+              combining years of expertise in general dentistry and prosthodontics with the latest dental technologies.
             </p>
           </div>
 
@@ -22,17 +22,17 @@ const About = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
-                  Your Trusted Dental Care Partner
+                  Your Trusted Dental Care Partner in Karur
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  Dr. A. R. Jagadeeshwaran brings extensive experience in <strong>General and Prosthodontics</strong>, 
-                  ensuring comprehensive dental care for patients of all ages. With a commitment to 
-                  excellence and patient comfort, every treatment is tailored to meet individual needs.
+                  Dr. A. R. Jagadeeshwaran brings extensive experience in <strong>General and Prosthodontics</strong> to Karur, 
+                  ensuring comprehensive dental care for patients of all ages. As a leading dentist in Karur, he combines 
+                  expertise with patient comfort, making every treatment tailored to meet individual needs.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  At Rasi Dental Clinic, we believe that a healthy smile is the foundation of 
-                  confidence and overall well-being. Our state-of-the-art facility and 
-                  compassionate approach make dental care a comfortable experience.
+                  At Rasi Dental Clinic in Karur, we believe that a healthy smile is the foundation of 
+                  confidence and overall well-being. Our state-of-the-art dental facility and 
+                  compassionate approach make dental care a comfortable experience for all Karur residents.
                 </p>
               </div>
 
@@ -44,7 +44,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Expert Care
+                      Expert Dental Care in Karur
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm">
                       Years of specialized training and continuous education in modern dental practices.
@@ -58,7 +58,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Patient-Centered
+                      Patient-Centered Approach
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm">
                       Every treatment plan is customized to address individual patient needs and concerns.
@@ -72,10 +72,10 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Compassionate Care
+                      Compassionate Dental Care
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm">
-                      Creating a comfortable, anxiety-free environment for all dental procedures.
+                      Creating a comfortable, anxiety-free environment for all dental procedures in Karur.
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Modern Technology
+                      Modern Dental Technology
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm">
                       Utilizing the latest dental technologies for precise and efficient treatments.
@@ -101,8 +101,9 @@ const About = () => {
               <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-3xl overflow-hidden">
                 <img 
                   src="/lovable-uploads/7467c5c7-85c2-4f97-88f0-aa7e5dff6231.png" 
-                  alt="Dr. A. R. Jagadeeshwaran"
+                  alt="Dr. A. R. Jagadeeshwaran - Best Dentist in Karur, Tamil Nadu specializing in General Dentistry and Prosthodontics"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               
@@ -111,7 +112,7 @@ const About = () => {
                   Dr. A. R. Jagadeeshwaran
                 </h4>
                 <p className="text-blue-600 dark:text-blue-400 font-medium">
-                  General and Prosthodontics
+                  General and Prosthodontics Specialist
                 </p>
               </div>
               
