@@ -100,7 +100,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-3xl overflow-hidden">
                 <img 
-                  src="/lovable-uploads/da04c1ff-094e-4633-b3b6-870328c937f4.png" 
+                  src="/lovable-uploads/7467c5c7-85c2-4f97-88f0-aa7e5dff6231.png" 
                   alt="Dr. A. R. Jagadeeshwaran"
                   className="w-full h-full object-cover"
                 />
