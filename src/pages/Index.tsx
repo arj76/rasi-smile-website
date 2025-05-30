@@ -10,7 +10,6 @@ import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ChatBot from "@/components/ChatBot";
 
 const Index = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -53,9 +52,6 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
-      
-      {/* ChatBot Widget */}
-      <ChatBot />
     </div>
   );
 };

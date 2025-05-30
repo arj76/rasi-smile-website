@@ -1,30 +1,7 @@
 
-import { useState } from "react";
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormData({ name: "", phone: "", email: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -40,157 +17,67 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
-                  Get in Touch
-                </h3>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                      <MapPin className="text-white" size={20} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                        Visit Our Clinic
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        Rasi Dental Clinic<br />
-                        Karur, Tamil Nadu
-                      </p>
-                    </div>
-                  </div>
+          {/* Contact Information */}
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
+                Get in Touch
+              </h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="text-white" size={24} />
+                </div>
+                <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                  Visit Our Clinic
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Rasi Dental Clinic<br />
+                  Karur, Tamil Nadu
+                </p>
+              </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Phone className="text-white" size={20} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                        Call Us
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        <a href="tel:+918148444798" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                          +91 81484 44798
-                        </a>
-                      </p>
-                    </div>
-                  </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Phone className="text-white" size={24} />
+                </div>
+                <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                  Call Us
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  <a href="tel:+918148444798" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                    +91 81484 44798
+                  </a>
+                </p>
+              </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Mail className="text-white" size={20} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                        Email Us
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        <a href="mailto:arjagadeeshwaran@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                          arjagadeeshwaran@gmail.com
-                        </a>
-                      </p>
-                    </div>
-                  </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mail className="text-white" size={24} />
+                </div>
+                <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                  Email Us
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  <a href="mailto:arjagadeeshwaran@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                    arjagadeeshwaran@gmail.com
+                  </a>
+                </p>
+              </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Clock className="text-white" size={20} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                        Operating Hours
-                      </h4>
-                      <div className="text-gray-600 dark:text-gray-300 space-y-1">
-                        <p>Monday - Sunday: 10:00 AM - 8:00 PM</p>
-                      </div>
-                    </div>
-                  </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="text-white" size={24} />
+                </div>
+                <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                  Operating Hours
+                </h4>
+                <div className="text-gray-600 dark:text-gray-300">
+                  <p>Monday - Sunday<br />10:00 AM - 8:00 PM</p>
                 </div>
               </div>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <form onSubmit={handleSubmit} className="bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
-                  Book an Appointment
-                </h3>
-
-                <div className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300"
-                      placeholder="Enter your phone number"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={4}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300"
-                      placeholder="Tell us about your dental concerns or preferred appointment time"
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold text-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
 
