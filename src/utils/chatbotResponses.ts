@@ -75,7 +75,7 @@ export const getChatbotResponse = (userMessage: string): ChatResponse => {
     };
   }
 
-  // Appointment booking
+  // Appointment booking - redirect to contact
   if (message.includes("book") || message.includes("appointment") || message.includes("schedule")) {
     return {
       text: "📅 To book your appointment, please contact us directly:\n\n📞 **Call:** +91 81484 44798\n📧 **Email:** arjagadeeshwaran@gmail.com\n\nOur team will help you find the perfect time slot!",
