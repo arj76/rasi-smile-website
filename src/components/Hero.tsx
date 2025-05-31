@@ -58,11 +58,11 @@ const Hero = () => {
                 <div className="text-gray-600 dark:text-gray-300">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">1000+</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">5000+</div>
                 <div className="text-gray-600 dark:text-gray-300">Happy Patients in Karur</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">95%</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">100%</div>
                 <div className="text-gray-600 dark:text-gray-300">Success Rate</div>
               </div>
             </div>
