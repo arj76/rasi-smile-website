@@ -1,7 +1,31 @@
 
 import { Award, Users, Heart, Shield } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
+  const consultants = [
+    {
+      name: "Dr. Kavin",
+      specialization: "Minor Oral Surgeon",
+      quote: "I was created to create beautiful smiles.",
+    },
+    {
+      name: "Dr. Bhuveneshwar",
+      specialization: "Orthodontist",
+      quote: "The new life begins with a confident smile.",
+    },
+    {
+      name: "Dr. Sindhu",
+      specialization: "Orthodontist",
+      quote: "Life is short, smile while you have teeth. If not, call us.",
+    },
+    {
+      name: "Dr. Vijaya Raghavan",
+      specialization: "Pediatric Dentistry",
+      quote: "Use your smile to change the world. Don't let the world change your smile.",
+    },
+  ];
+
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -17,7 +41,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             {/* Content */}
             <div className="space-y-8">
               <div>
@@ -119,6 +143,52 @@ const About = () => {
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-200 dark:bg-blue-700 rounded-full opacity-50"></div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-100 dark:bg-blue-800 rounded-full opacity-30"></div>
+            </div>
+          </div>
+
+          {/* Meet Our Consultants Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                Meet Our Consultants
+              </h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Our experienced team of dental specialists is dedicated to providing you with the highest quality care
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {consultants.map((consultant, index) => (
+                <Card 
+                  key={index} 
+                  className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-6 text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <div className="w-12 h-12 bg-blue-600 dark:bg-blue-400 rounded-full flex items-center justify-center">
+                        <Users className="w-6 h-6 text-white dark:text-gray-900" />
+                      </div>
+                    </div>
+                    
+                    <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                      {consultant.name}
+                    </h4>
+                    
+                    <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">
+                      Specialization: {consultant.specialization}
+                    </p>
+                    
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                      Years of experience: <span className="text-gray-400 dark:text-gray-500">TBA</span>
+                    </p>
+                    
+                    <blockquote className="text-sm text-gray-600 dark:text-gray-300 italic leading-relaxed">
+                      "{consultant.quote}"
+                    </blockquote>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
