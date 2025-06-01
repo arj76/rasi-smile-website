@@ -100,7 +100,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-3xl overflow-hidden">
                 <img 
-                  src="/lovable-uploads/a45cae42-fb6a-44f9-bdf8-d320d72bafcf.png" 
+                  src="/lovable-uploads/31a096fb-4264-4ee8-8ffc-89b485201870.png" 
                   alt="Dr. A. R. Jagadeeshwaran - Best Dentist in Karur, Tamil Nadu specializing in General Dentistry and Prosthodontics"
                   className="w-full h-full object-cover"
                   loading="lazy"
