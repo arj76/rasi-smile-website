@@ -8,21 +8,29 @@ const About = () => {
       name: "Dr. Kavin",
       specialization: "Minor Oral Surgeon",
       quote: "I was created to create beautiful smiles.",
+      image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
+      alt: "Male dentist icon"
     },
     {
       name: "Dr. Bhuveneshwar",
       specialization: "Orthodontist",
       quote: "The new life begins with a confident smile.",
+      image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
+      alt: "Male dentist icon"
     },
     {
       name: "Dr. Sindhu",
       specialization: "Orthodontist",
       quote: "Life is short, smile while you have teeth. If not, call us.",
+      image: "/lovable-uploads/b27d6f56-197c-47d7-bd8c-04ea5f8dcaf6.png",
+      alt: "Female dentist icon"
     },
     {
       name: "Dr. Vijaya Raghavan",
       specialization: "Pediatric Dentistry",
       quote: "Use your smile to change the world. Don't let the world change your smile.",
+      image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
+      alt: "Male dentist icon"
     },
   ];
 
@@ -165,10 +173,12 @@ const About = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <div className="w-12 h-12 bg-blue-600 dark:bg-blue-400 rounded-full flex items-center justify-center">
-                        <Users className="w-6 h-6 text-white dark:text-gray-900" />
-                      </div>
+                    <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                      <img 
+                        src={consultant.image} 
+                        alt={consultant.alt}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     
                     <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
