@@ -193,6 +193,48 @@ const About = () => {
               ))}
             </div>
           </div>
+
+          {/* Assistant Doctor Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                Assistant Doctor
+              </h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                We're proud to have skilled and supportive professionals who ensure every patient receives the best care.
+              </p>
+            </div>
+
+            <div className="max-w-2xl mx-auto">
+              <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in">
+                <CardContent className="p-8 text-center">
+                  <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/b27d6f56-197c-47d7-bd8c-04ea5f8dcaf6.png" 
+                      alt="Female dentist icon for Dr. Nishita"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  
+                  <h4 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">
+                    Dr. Nishita
+                  </h4>
+                  
+                  <p className="text-lg text-blue-600 dark:text-blue-400 font-medium mb-2">
+                    Qualification: BDS
+                  </p>
+                  
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                    Experience: 5+ years
+                  </p>
+                  
+                  <blockquote className="text-lg text-gray-600 dark:text-gray-300 italic leading-relaxed border-l-4 border-blue-400 pl-4">
+                    "Life is short, smile while you have teeth. If not, call us."
+                  </blockquote>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>
