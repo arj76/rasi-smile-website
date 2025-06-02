@@ -1,4 +1,3 @@
-
 import { Award, Users, Heart, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -17,13 +16,6 @@ const About = () => {
       quote: "The new life begins with a confident smile.",
       image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
       alt: "Male dentist icon"
-    },
-    {
-      name: "Dr. Sindhu",
-      specialization: "Orthodontist",
-      quote: "Life is short, smile while you have teeth. If not, call us.",
-      image: "/lovable-uploads/b27d6f56-197c-47d7-bd8c-04ea5f8dcaf6.png",
-      alt: "Female dentist icon"
     },
     {
       name: "Dr. Vijaya Raghavan",
