@@ -1,4 +1,3 @@
-
 import { Award, Users, Heart, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -161,11 +160,11 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
               {consultants.map((consultant, index) => (
                 <Card 
                   key={index} 
-                  className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+                  className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in max-w-sm w-full"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-6 text-center">
