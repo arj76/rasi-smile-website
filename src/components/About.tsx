@@ -1,3 +1,4 @@
+
 import { Award, Users, Heart, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -6,6 +7,7 @@ const About = () => {
     {
       name: "Dr. Kavin",
       specialization: "Minor Oral Surgeon",
+      experience: "20+ years",
       quote: "I was created to create beautiful smiles.",
       image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
       alt: "Male dentist icon"
@@ -13,6 +15,7 @@ const About = () => {
     {
       name: "Dr. Bhuveneshwar",
       specialization: "Orthodontist",
+      experience: "15+ years",
       quote: "The new life begins with a confident smile.",
       image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
       alt: "Male dentist icon"
@@ -20,6 +23,7 @@ const About = () => {
     {
       name: "Dr. Vijaya Raghavan",
       specialization: "Pediatric Dentistry",
+      experience: "15+ years",
       quote: "Use your smile to change the world. Don't let the world change your smile.",
       image: "/lovable-uploads/aedb9b21-3679-4377-b394-7cc93a6dfc1c.png",
       alt: "Male dentist icon"
@@ -182,7 +186,7 @@ const About = () => {
                     </p>
                     
                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                      Years of experience: <span className="text-gray-400 dark:text-gray-500">TBA</span>
+                      Years of experience: {consultant.experience}
                     </p>
                     
                     <blockquote className="text-sm text-gray-600 dark:text-gray-300 italic leading-relaxed">
@@ -220,12 +224,8 @@ const About = () => {
                     Dr. Nishita
                   </h4>
                   
-                  <p className="text-lg text-blue-600 dark:text-blue-400 font-medium mb-2">
+                  <p className="text-lg text-blue-600 dark:text-blue-400 font-medium mb-6">
                     Qualification: BDS
-                  </p>
-                  
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                    Experience: 5+ years
                   </p>
                   
                   <blockquote className="text-lg text-gray-600 dark:text-gray-300 italic leading-relaxed border-l-4 border-blue-400 pl-4">
