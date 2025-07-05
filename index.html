@@ -66,26 +66,20 @@
         "https://rasi-dental-clinic.lovable.app/"
       ]
     }
-    <style>
-  .cover-badge {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 130px;     /* Adjust based on badge size */
-    height: 40px;
-    background-color: white; /* Or match your website background */
-    z-index: 9999;
-    pointer-events: none; /* So it doesn't block clicks on other content */
-  }
-</style>
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G8YL9K9HQ"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
 
-
+     gtag('config', 'G-9G8YL9K9HQ');
+    </script>
   </head>
 
   <body>
     <div id="root"><!--app-html--></div>
-    <div class="cover-badge"></div>
-
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
