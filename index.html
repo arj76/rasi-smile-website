@@ -67,33 +67,25 @@
       ]
     }
     <style>
-  /* Try to hide by common IDs or classes */
-  #lovable-badge,
-  .lovable-badge,
-  [id*="lovable"],
-  [class*="lovable"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-  }
-
-  /* Hide any badge positioned in the bottom-right corner */
-  div[style*="position: fixed"][style*="bottom"][style*="right"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    pointer-events: none !important;
+  .cover-badge {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 130px;     /* Adjust based on badge size */
+    height: 40px;
+    background-color: white; /* Or match your website background */
+    z-index: 9999;
+    pointer-events: none; /* So it doesn't block clicks on other content */
   }
 </style>
+
 
   </head>
 
   <body>
     <div id="root"><!--app-html--></div>
+    <div class="cover-badge"></div>
+
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
