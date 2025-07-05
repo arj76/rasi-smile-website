@@ -78,10 +78,21 @@
     </script>
     
     <style>
-     #lovable-badge {
-       display: none !important;
-     }
-    </style>
+  /* Hide badge by ID */
+  #lovable-badge {
+    display: none !important;
+  }
+
+  /* Hide any fixed badge-like element */
+  div[style*="fixed"][style*="bottom"] {
+    display: none !important;
+  }
+
+  /* Hide any floating badge image/link at the bottom-right */
+  div[style*="position:fixed"][style*="right"][style*="bottom"] {
+    display: none !important;
+  }
+</style>
 
   </head>
 
