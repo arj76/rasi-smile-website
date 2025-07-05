@@ -66,31 +66,27 @@
         "https://rasi-dental-clinic.lovable.app/"
       ]
     }
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G8YL9K9HQ"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-     gtag('config', 'G-9G8YL9K9HQ');
-    </script>
-    
     <style>
-  /* Hide badge by ID */
-  #lovable-badge {
+  /* Try to hide by common IDs or classes */
+  #lovable-badge,
+  .lovable-badge,
+  [id*="lovable"],
+  [class*="lovable"] {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
   }
 
-  /* Hide any fixed badge-like element */
-  div[style*="fixed"][style*="bottom"] {
+  /* Hide any badge positioned in the bottom-right corner */
+  div[style*="position: fixed"][style*="bottom"][style*="right"] {
     display: none !important;
-  }
-
-  /* Hide any floating badge image/link at the bottom-right */
-  div[style*="position:fixed"][style*="right"][style*="bottom"] {
-    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    pointer-events: none !important;
   }
 </style>
 
