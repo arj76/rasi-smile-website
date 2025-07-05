@@ -55,5 +55,28 @@ const Index = () => {
     </div>
   );
 };
+<style>
+  /* Try to hide by common IDs or classes */
+  #lovable-badge,
+  .lovable-badge,
+  [id*="lovable"],
+  [class*="lovable"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  /* Hide any badge positioned in the bottom-right corner */
+  div[style*="position: fixed"][style*="bottom"][style*="right"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    pointer-events: none !important;
+  }
+</style>
 
 export default Index;
